@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: serif;
+  font-size: 15px;
+  scroll-behavior: smooth;
+  user-select: none;
+  font-family: "Montserrat-Medium";
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.zoom {
+  animation-timing-function: linear;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  cursor: pointer;
+  transform: scale(
+    1.2
+  );
+}
+#back-to-top-button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  border-radius: 12px;
+  border: 0.16rem solid #0c090a;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.4rem;
+  transition: background-color 0.4s ease-in-out, border 0.1s ease-in,
+    opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 999;
+  box-sizing: border-box;
+}
+#back-to-top-button::before {
+  content: "";
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background-color: #0c090a;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+#back-to-top-button::after {
+  content: "\f106";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  translate: -50% -50%;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.2rem;
+  color: #0c090a;
+  transition: color 0.5s ease-in-out;
+}
+#back-to-top-button:hover {
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  &::after {
+    color: #ffffff;
+  }
+  &::before {
+    transform: scale(1);
+  }
+}
+#back-to-top-button:active {
+  background-color: #0c090a;
+}
+#back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}

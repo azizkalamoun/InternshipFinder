@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.banner-image {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: 1rem;
+  z-index: -1;
+}
+
+.banner-text {
+  position: absolute;
+  left: 22.5rem;
+  top: 15rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-text h6 {
+  margin: 0;
+  line-height: 2.6rem;
+  font-weight: 800;
+  font-family: "Franklin-Gothic-Demi";
+}
+
+.banner-text h6:nth-of-type(1) {
+  font-size: 2.7rem;
+  letter-spacing: -0.1rem;
+  line-height: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+.banner-text h6:nth-of-type(2) {
+  font-size: 5.9rem;
+  letter-spacing: -0.2rem;
+}
+
+.banner-text h6:nth-of-type(3) {
+  font-size: 4.04rem;
+  letter-spacing: -0.2rem;
+}
+
+.banner-text h6:nth-of-type(4) {
+  line-height: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+.banner-text h6:nth-of-type(4) li {
+  display: inline-block;
+}
+
+.banner-text h6:nth-of-type(4) li::before {
+  content: "•";
+  padding: 0 0.1rem;
+}
+
+.banner-text:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}

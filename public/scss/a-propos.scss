@@ -1,0 +1,54 @@
+body {
+    background: url("../images/background-pattern.png") no-repeat fixed center;
+    background-size: 100vw 120%;
+  }
+  .title {
+    position: relative;
+    margin-top: 9rem;
+    margin-left: 7.1rem;
+    font-family: "Montserrat-Bold";
+    font-size: bold;
+    transition: transform .3s ease-in-out;
+    h1 {
+      margin: 0;
+      line-height: 3.2rem;
+      &:nth-of-type(1) {
+        margin: 2rem 0 0.15rem 0.2rem;
+        font-size: 2.36rem;
+      }
+      &:nth-of-type(2) {
+        font-size: 4.56rem;
+        letter-spacing: -0.2rem;
+      }
+    }
+    &:hover{
+        transform : scale(1.02);
+    }
+  }
+  .description {
+    margin-top: 2.5rem;
+    margin-left: 7.5rem;
+    position: relative;
+    font-size: 1.4rem;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    width: 80rem;
+    text-align: left;
+    line-height: 1.6rem;
+    &::before {
+      content: "";
+      height: 60%;
+      width: 0.9rem;
+      background-color: #0c090a;
+      position: absolute;
+      left: -1.5rem;
+      top: 20%;
+    }
+  }
+  h5{
+    b{
+        font-family: "Montserrat-bold";
+    }
+    margin-left: 7.5rem;
+    font-size: 1.6rem;
+  }
