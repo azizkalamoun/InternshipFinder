@@ -14,6 +14,11 @@
 - **Web Scraping Command** — `artisan app:web-scraper` using Symfony BrowserKit/HttpClient (prototype stage with placeholder CSS selectors) (`app/Console/Commands/WebScraper.php`)
 
 ---
+## Demo
+
+https://github.com/user-attachments/assets/d3d4c944-2da9-412f-88ed-d8a1f4717481
+
+---
 
 ## Architecture Overview
 
